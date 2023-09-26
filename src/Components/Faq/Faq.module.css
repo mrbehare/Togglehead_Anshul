@@ -1,0 +1,62 @@
+/* In your CSS module (Faq.module.css) */
+.accordion {
+  margin: 30px 100px 30px 100px;
+}
+
+/* Add a media query for small screens */
+@media (max-width: 768px) {
+  .accordion {
+      margin: 20px; /* Adjust margin for small screens */
+  }
+
+  .accordionWrapper {
+      margin: 20px; /* Adjust margin for small screens */
+  }
+
+  .questionTitle {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Reduce border thickness for small screens */
+  }
+
+  .questionTitle:hover {
+      border-color: darkblue rgba(0, 0, 0, 0.4);
+  }
+
+  .expanded {
+      color: darkblue!important;
+      border-bottom: 1px solid darkblue!important;
+  }
+
+  .headFaq {
+      font-size: 24px; /* Reduce font size for small screens */
+  }
+
+  /* Disable icons for small screens */
+  .accordionSummary .MuiSvgIcon-root {
+      display: none;
+  }
+}
+
+.innerText {
+  align-items: left;
+  text-align: left;
+  opacity: 0.6;
+  font-size: 10px;
+}
+
+.questionTitle {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+}
+
+.questionTitle:hover {
+  border-color: darkblue rgba(0, 0, 0, 0.4);
+}
+
+.expanded {
+  color: darkblue!important;
+  border-bottom: 1px solid darkblue!important;
+}
+
+.headFaq {
+  color: darkblue;
+  font-size: 32px;
+}
